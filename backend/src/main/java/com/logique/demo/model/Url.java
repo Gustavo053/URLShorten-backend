@@ -10,6 +10,7 @@ public class Url {
     @Id
     private String id;
     private String userId;
+    private String userLogin;
     private String urlOriginal;
     private String urlGenerated;
     private Date date;
@@ -60,5 +61,13 @@ public class Url {
 
     public void setUserId(String userId) {
         this.userId = userId;
+    }
+
+    public String getUserLogin() {
+        return userLogin;
+    }
+
+    public void setUserLogin(String userLogin) {
+        this.userLogin = userLogin;
     }
 }

@@ -25,6 +25,14 @@ public class UrlService {
         return urlRepository.findById(id);
     }
 
+    public List<Url> getAllById(String id) {
+        return urlRepository.getAllById(id);
+    }
+
+    public List<Url> findAllByUserId(String id) {
+        return urlRepository.findAllByUserId(id);
+    }
+
     public Url createAndUpdate(Url url) {
         return urlRepository.save(url);
     }
