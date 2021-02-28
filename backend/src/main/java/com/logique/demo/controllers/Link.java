@@ -39,7 +39,7 @@ public class Link {
     @GetMapping(path = "/{userId}")
     public ResponseEntity<List<Url>> getById(@PathVariable String userId) {
         if (userService.getById(userId) != null) {
-            return ResponseEntity.ok(urlService.findAllByUserId(userId));
+            return ResponseEntity.ok(urlService .findAllByUserId(userId));
         } else {
             return ResponseEntity.notFound().build();
         }

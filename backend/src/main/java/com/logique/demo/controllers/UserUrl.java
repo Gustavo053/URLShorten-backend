@@ -4,7 +4,6 @@ import com.logique.demo.model.Url;
 import com.logique.demo.model.User;
 import com.logique.demo.service.UrlService;
 import com.logique.demo.service.UserService;
-import com.logique.demo.utils.Shortener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
